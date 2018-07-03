@@ -1,0 +1,681 @@
+/*  01-03-2018
+    Ahmet Selim ERGİN TARAFINDAN OLUŞTURUDU.
+    asease42@gmail.com
+*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+/*type writer design code*/
+.typewriter p {
+    overflow: hidden;
+    font-size: 0.75em;
+    color:#ffffff;
+    /*border-right: .05em solid orange;*/
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+/*typewriter end*/
+.ortala{
+    display: flex; justify-content: center;
+}
+.icerik{
+    min-height: 50vh;
+}
+
+
+
+.box-gr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+}
+.gradient-border {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+    /*box-shadow: 0px 0px 4px 4px grey;*/
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #50c56c, #1b919b);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #0e1a35;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #0e1a35;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: 0em;
+}
+blockquote h1 {
+    display: inline;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family:Raleway;
+}
+
+.paragraf{
+    font-family:Raleway;
+    font-weight: bold;
+    font-size:1.15rem;
+}
+
+/*social icons*/
+
+
+.center-circle > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    /*background: rgba(255, 255, 255, 0.1);*/
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.center-circle > a:hover {
+    color: #3f7c2d;
+}
+
+.categories {
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.categories a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #535353;
+}
+
+.half-circle-menu {
+    background: url('https://res.cloudinary.com/dm5b7b3f5/image/upload/v1431002024/circlemenu/menu_bg.png') center top;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    padding-bottom: 2px;
+}
+
+.center-circle {
+    top: 250px;
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    line-height: 50px;
+    text-align: center;
+    /*background: #444;*/
+    list-style-type: none;
+    position: relative;
+}
+
+.little-circle {
+    background: #5fb446;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five{
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+.one {
+    background: url("../img/sosyal/instagram.png");
+}
+.two {
+    background: url('../img/sosyal/facebook.png');
+}
+.three {
+    background: url('../img/sosyal/twitter.png');
+}
+.four{
+    background: url('../img/sosyal/youtube.png');
+}
+.five{
+    background: url('../img/sosyal/github.png');
+}
+
+.password-reset{
+    text-decoration: none;
+}
+.password-reset:hover{
+    text-decoration: none;
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+
+.progressbar {
+    counter-reset: step;
+}
+.progressbar li {
+    list-style: none;
+    display: inline-block;
+    width: 30.33%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    line-height : 30px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+}
+.progressbar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index : -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: green;
+
+}
+.progressbar li.active:before {
+    border-color: green;
+    border:2px solid;
+}
+.progressbar li.active + li:after {
+    background-color: green;
+}
+
+
+
+/*social*/
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+
+.btn-social .fa,.btn-social i
+{
+    backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    ms-transform: scale(1);
+    o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    webkit-backface-visibility: hidden;
+    webkit-transform: scale(1);
+    webkit-transition: all .25s;
+}
+.btn-social:hover,.btn-social:focus
+{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
+{
+    ms-transform: scale(1.3);
+    o-transform: scale(1.3);
+    transform: scale(1.3);
+    webkit-transform: scale(1.3);
+}
+.btn-social.btn-xs
+{
+    font-size: 9px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+}
+.btn-social.btn-sm
+{
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+}
+.btn-social.btn-lg
+{
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+}
+
+.btn-behance
+{
+    background-color: #1769ff;
+}
+.btn-behance:hover
+{
+    background-color: #4a8aff;
+}
+.btn-bitbucket
+{
+    background-color: #205081;
+}
+.btn-bitbucket:hover
+{
+    background-color: #2a69aa;
+}
+.btn-codepen
+{
+    background-color: #76daff;
+}
+.btn-codepen:hover
+{
+    background-color: #a9e8ff;
+}
+.btn-deviantart
+{
+    background-color: #4e6252;
+}
+.btn-deviantart:hover
+{
+    background-color: #657e6a;
+}
+.btn-digg
+{
+    background-color: #000;
+}
+.btn-digg:hover
+{
+    background-color: #1a1a1a;
+}
+.btn-dribbble
+{
+    background-color: #ea4c89;
+}
+.btn-dribbble:hover
+{
+    background-color: #ef7aa7;
+}
+.btn-dropbox
+{
+    background-color: #007ee5;
+}
+.btn-dropbox:hover
+{
+    background-color: #1998ff;
+}
+.btn-facebook
+{
+    background-color: #3b5998;
+}
+.btn-facebook:hover
+{
+    background-color: #4c70ba;
+}
+.btn-flickr
+{
+    background-color: #0063dc;
+}
+.btn-flickr:hover
+{
+    background-color: #107cff;
+}
+.btn-foursquare
+{
+    background-color: #ef4b78;
+}
+.btn-foursquare:hover
+{
+    background-color: #f37a9b;
+}
+.btn-github
+{
+    background-color: #4183c4;
+}
+.btn-github:hover
+{
+    background-color: #689cd0;
+}
+.btn-google-plus
+{
+    background-color: #dd4b39;
+}
+.btn-google-plus:hover
+{
+    background-color: #e47365;
+}
+.btn-instagram
+{
+    background-color: #3f729b;
+}
+.btn-instagram:hover
+{
+    background-color: #548cb9;
+}
+.btn-jsfiddle
+{
+    background-color: #4679bd;
+}
+.btn-jsfiddle:hover
+{
+    background-color: #6c94ca;
+}
+.btn-lastfm
+{
+    background-color: #e31b23;
+}
+.btn-lastfm:hover
+{
+    background-color: #e9484e;
+}
+.btn-linkedin
+{
+    background-color: #0976b4;
+}
+.btn-linkedin:hover
+{
+    background-color: #0b96e5;
+}
+.btn-paypal
+{
+    background-color: #253b80;
+}
+.btn-paypal:hover
+{
+    background-color: #304da8;
+}
+.btn-pinterest
+{
+    background-color: #cc2127;
+}
+.btn-pinterest:hover
+{
+    background-color: #e04046;
+}
+.btn-reddit
+{
+    background-color: #ff4500;
+}
+.btn-reddit:hover
+{
+    background-color: #ff6a33;
+}
+.btn-skype
+{
+    background-color: #00aff0;
+}
+.btn-skype:hover
+{
+    background-color: #24c4ff;
+}
+.btn-soundcloud
+{
+    background-color: #f80;
+}
+.btn-soundcloud:hover
+{
+    background-color: #ffa033;
+}
+.btn-stack-overflow
+{
+    background-color: #fe7a15;
+}
+.btn-stack-overflow:hover
+{
+    background-color: #fe9748;
+}
+.btn-steam
+{
+    background-color: #7da10e;
+}
+.btn-steam:hover
+{
+    background-color: #a1d012;
+}
+.btn-stumbleupon
+{
+    background-color: #eb4924;
+}
+.btn-stumbleupon:hover
+{
+    background-color: #ef7053;
+}
+.btn-trello
+{
+    background-color: #256a92;
+}
+.btn-trello:hover
+{
+    background-color: #2f88bb;
+}
+.btn-tumblr
+{
+    background-color: #35465c;
+}
+.btn-tumblr:hover
+{
+    background-color: #485f7c;
+}
+.btn-twitch
+{
+    background-color: #6441a5;
+}
+.btn-twitch:hover
+{
+    background-color: #7e5bbe;
+}
+.btn-twitter
+{
+    background-color: #55acee;
+}
+.btn-twitter:hover
+{
+    background-color: #83c3f3;
+}
+.btn-vimeo
+{
+    background-color: #1ab7ea;
+}
+.btn-vimeo:hover
+{
+    background-color: #49c6ee;
+}
+.btn-vine
+{
+    background-color: #00b488;
+}
+.btn-vine:hover
+{
+    background-color: #00e7af;
+}
+.btn-vk
+{
+    background-color: #45668e;
+}
+.btn-vk:hover
+{
+    background-color: #587fae;
+}
+.btn-wechat
+{
+    background-color: #98d11c;
+}
+.btn-wechat:hover
+{
+    background-color: #afe53b;
+}
+.btn-wordpress
+{
+    background-color: #21759b;
+}
+.btn-wordpress:hover
+{
+    background-color: #2a95c5;
+}
+.btn-xing
+{
+    background-color: #026466;
+}
+.btn-xing:hover
+{
+    background-color: #039598;
+}
+.btn-yahoo
+{
+    background-color: #400191;
+}
+.btn-yahoo:hover
+{
+    background-color: #5601c4;
+}
+.btn-yelp
+{
+    background-color: #af0606;
+}
+.btn-yelp:hover
+{
+    background-color: #e00808;
+}
+.btn-youtube
+{
+    background-color: #e52d27;
+}
+.btn-youtube:hover
+{
+    background-color: #ea5955;
+}
+.btn-email
+{
+    background-color: #44c456;
+}
+.btn-email:hover
+{
+    background-color: #6bd079;
+}
+
+.header-back{
+    background-image: url("assets/img/header.jpg");
+}
+

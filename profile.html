@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profil Sayfası</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/progress.scss">
+</head>
+<body>
+
+<!--menu kısmı-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toplulukNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="toplulukNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <div class="typewriter">
+                    <p>Kendi inovasyonunuza hazır olun !</p>
+                </div>
+                <div class="typewriter">
+                    <p>Be ready for your own inovation !</p>
+                </div>
+                <div class="typewriter">
+                    <p>Budile spremni za viastitu inovaciju !</p>
+                </div>
+            </li>
+        </ul>
+        <a href="favoriler.html" class="ml-auto"><i class="material-icons text-light" style="font-size:3em;">favorite</i></a>
+        <a href="profile.html" class=""><i class="material-icons text-light" style="font-size:3em;">person_outline</i></a>
+        <a href="#" ><i class="material-icons text-light" style="font-size:3em;">power_settings_new</i></a>
+    </div>
+</nav>
+<!-- ./menu kısmı-->
+
+
+<!--içerik kısmı-->
+<div class="container mt-5 mb-5 ">
+    <div class="row">
+        <div class="col-6 border-right border-dark icerik ">
+            <div  class="">
+                <div class="col-6 bg-dark"><a class="ortala text-light py-2" style="text-decoration: none;" href="giris.html">Kullanıcı Teknolojileri</a></div>
+            </div>
+            <div class="col-12">
+                <form class="mt-5">
+                    <div class="form-group mt-4 row">
+                        <div class="col-4">
+                            <div id="custom-search-input" class="gradient-border box-gr">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-lg example-default-valu" id="seach_teknoloji" placeholder="Kullanılan Teknolojiler" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info btn-lg" type="button">
+                                            <i class="material-icons">search</i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-4 "><button type="button" class="btn btn-info">CSS</button></div>
+                                <div class="col-4 "><button type="button" class="btn btn-info">HTML</button></div>
+                                <div class="col-4 "><button type="button" class="btn btn-info">RUBY</button></div>
+                                <div class="col-4 mt-2"><button type="button" class="btn btn-info">JQUERY</button></div>
+                                <div class="col-4 mt-2"><button type="button" class="btn btn-info">JAVA</button></div>
+                                <div class="col-4 mt-2"><button type="button" class="btn btn-info">C#</button></div>
+                                <div class="col-4 mt-2"><button type="button" class="btn btn-info">PEARL</button></div>
+                                <div class="col-4 mt-2"><button type="button" class="btn btn-info">LISP</button></div>
+                            </div>
+                        </div>
+                        <div class=" col-4 mt-6 ml-auto">
+                            <input type="submit" class="btn btn-success w-100" value="Kaydet"  />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="col-12 border-bottom border-dark">
+                <div class="row">
+                    <div class="col-2">
+                        <a><i class="material-icons" style="font-size:4em;">account_circle</i></a>
+                    </div>
+                    <div class="col-6">
+                        <h2>Kullanıcı Adı</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 mt-5">
+               <div class="row">
+                   <div class="col-4"><h4>User Degree</h4></div>
+                   <div class="col-8">
+                       <ul class="progressbar">
+                           <li >1.Seviye</li>
+                           <li class="active">2. Seviye</li>
+                           <li>3. Seviye</li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container border-top border-dark mt-6">
+
+    <div class="row">
+        <div class="col-12 mt-4">
+            <div class="row">
+                <div class="col-1">
+                    <a><i class="material-icons" style="font-size:4em;">settings</i></a>
+                </div>
+                <div class="col-6">
+                    <h2>Profili Düzenle</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mt-4 row">
+                                    <div class="input-group col-12">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">Resim</span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mt-4 row">
+
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="form-group mt-4 row">
+                                    <label for="kayit-sifre" class="col-3  col-form-label">Şifre</label>
+                                    <div class="col-9">
+                                        <div class="gradient-border box-gr">
+                                            <input type="password" class="w-100" id="kayit-sifre" placeholder="Şifre">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-5">
+                            <div class="form-group mt-4 row">
+                                <label for="kayit-sifre-tekrar" class="col-3 col-form-label">Şifre Tekrar</label>
+                                <div class="col-9">
+                                    <div class="gradient-border box-gr">
+                                        <input type="password" class="w-100" id="kayit-sifre-tekrar" placeholder="Şifre Tekrar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="form-group mt-4 row">
+                                <div class="col-8 offset-4">
+                                        <input type="submit" class="w-100 btn btn-success" id="" value="Kaydet">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--social media icons-->
+<div class="container mt-5">
+    <div class="half-circle-menu">
+        <div class="center-circle">
+            <div class="categories"><a href="#">Sosyal Medya</a></div>
+            <a class="little-circle one" href="#link8" data-name="Instagram"></a>
+            <a class="little-circle two" href="#link7" data-name="Facebook"></a>
+            <a class="little-circle three" href="#link6" data-name="Twitter"></a>
+            <a class="little-circle four" href="#link5" data-name="Youtube"></a>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jq.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/social.js"></script>
+
+</body>
+</html>

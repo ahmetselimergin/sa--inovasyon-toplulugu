@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proje Sayfası</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/progress.scss">
+</head>
+<body>
+
+<!--menu kısmı-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toplulukNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="toplulukNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <div class="typewriter">
+                    <p>Kendi inovasyonunuza hazır olun !</p>
+                </div>
+                <div class="typewriter">
+                    <p>Be ready for your own inovation !</p>
+                </div>
+                <div class="typewriter">
+                    <p>Budile spremni za viastitu inovaciju !</p>
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="ml-auto"><i class="material-icons text-light" style="font-size:3em;">grade</i></a>
+        <a href="#" class=""><i class="material-icons text-light" style="font-size:3em;">person_outline</i></a>
+        <a href="#" ><i class="material-icons text-light" style="font-size:3em;">power_settings_new</i></a>
+    </div>
+</nav>
+<!-- ./menu kısmı-->
+<!--içerik kısmı-->
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-2">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-primary border border-dark"> JQUERY</li>
+                <li class="list-group-item list-group-item-light border border-dark"> HTML</li>
+                <li class="list-group-item list-group-item-primary border border-dark"> CSS</li>
+                <li class="list-group-item list-group-item-light border border-dark"> PERL</li>
+                <li class="list-group-item list-group-item-primary border border-dark"> LISP</li>
+                <li class="list-group-item list-group-item-light border border-dark"> C++</li>
+                <li class="list-group-item list-group-item-primary border border-dark"> JAVA</li>
+                <li class="list-group-item list-group-item-light border border-dark"> PYTHON</li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <div class="row">
+                <div class="col-12 border-bottom border-dark">
+                    <h2>Proje Adı</h2>
+                </div>
+                <div class="col-12 mt-3">
+                    <p>
+                        Bazı web siteleri, siteler arasında gezinirken etkinliğinizi izleyebilecek takipçiler kullanır. Firefox’un İzlenme Koruması, gezinme davranışlarınız hakkında bilgi toplayabilecek takipçilerin çoğunu engeller.
+                        Bazı web siteleri, siteler arasında gezinirken etkinliğinizi izleyebilecek takipçiler kullanır. Firefox’un İzlenme Koruması, gezinme davranışlarınız hakkında bilgi toplayabilecek takipçilerin çoğunu engeller.
+                    </p>
+                </div>
+                <div class="col-12 mt-3 border border-dark">
+                    <pre>
+    // ciklus futtatasa a linkeken / loop in links
+    $.each(links, function(){
+        angle += step;
+        rad = angle * (Math.PI / 180);
+        x = Math.round(r * Math.cos(rad)) + 125;
+        y = Math.round(r * Math.sin(rad));
+        //$(this).css({ left: x + 'px', 'margin-top': -1*y + 'px' });
+        $(this).animate({ left: x + 'px', 'margin-top': -1*y + 'px' });
+    });
+
+    links.hover(function(e){
+        e.preventDefault();
+        var name = $(this).data('name');
+        console.log(name);
+        var link = $(this).attr('href');
+        $('.categories a').text(name);
+        $('.categories a').attr('href',link);
+    });
+}
+
+$(document).ready(function(){
+    setPosition();
+});
+                    </pre>
+                </div>
+                <div class="col-12 mt-3">
+                    <p>
+                        Bazı web siteleri, siteler arasında gezinirken etkinliğinizi izleyebilecek takipçiler kullanır. Firefox’un İzlenme Koruması, gezinme davranışlarınız hakkında bilgi toplayabilecek takipçilerin çoğunu engeller.
+                    </p>
+                </div>
+                <div class="col-12 mt-3 border border-dark">
+                    <pre>
+
+    links.hover(function(e){
+        e.preventDefault();
+        var name = $(this).data('name');
+        console.log(name);
+        var link = $(this).attr('href');
+        $('.categories a').text(name);
+        $('.categories a').attr('href',link);
+    });
+}
+
+$(document).ready(function(){
+    setPosition();
+});
+                    </pre>
+                </div>
+
+                <div class="col-12 mt-3 border-bottom border-dark">
+                    <h2>Yorumlar</h2>
+                </div>
+                <div class="col-12 mt-3 border-bottom border-dark">
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-bottom border-primary">
+                        <div class="col-3 border-right border-primary my-2">
+                            <h4>Kullanıcı Adı</h4>
+                        </div>
+                        <div class="col-8 my-2 border-right border-primary">
+                            <p>
+                                Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                            </p>
+                        </div>
+                        <div class="col-1 my-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-11 offset-1">
+                            <div class="row">
+                                <div class="col-3 border-right border-primary my-2">
+                                    <h4>Kullanıcı Adı</h4>
+                                </div>
+                                <div class="col-8 my-2 border-right border-primary">
+                                    <p>
+                                        Note that depending on how they are used, badges may be confusing for users of screen readers and similar assistive technologies.
+                                    </p>
+                                </div>
+                                <div class="col-1 my-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button class="bg-transparent border-0" ><i class="text-danger material-icons">favorite</i></button>
+                                        </div>
+                                        <div class="col-12 mt-2">
+                                            <button class="bg-transparent border-0"><i class="text-warning material-icons">textsms</i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
+                    <form action="">
+                        <div class="form-group">
+                            <textarea class="form-control border border-dark" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            <button type="submit" class="ml-auto my-4 btn btn-primary">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1 ml-auto">
+            <button type="button" class="btn btn-warning text-light">
+                Favorilere Ekle
+            </button>
+            <button type="button" class="btn btn-primary mt-2">
+                Görülme&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge badge-light">4</span>
+            </button>
+            <div class="row">
+                <div class="col-12 mx-5 mb-5 mt-3">
+                    <a class="little-circle one" href="#" ></a>
+                </div>
+                <div class="col-12 m-5">
+                    <a class="little-circle two" href="#" ></a>
+                </div>
+                <div class="col-12 m-5 ">
+                    <a class="little-circle three" href="#"></a>
+                </div>
+                <div class="col-12 m-5 ">
+                    <a class="little-circle four" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--social media icons-->
+<div class="container mt-5">
+    <div class="half-circle-menu">
+        <div class="center-circle">
+            <div class="categories"><a href="#">Sosyal Medya</a></div>
+            <a class="little-circle one" href="#link8" data-name="Instagram"></a>
+            <a class="little-circle two" href="#link7" data-name="Facebook"></a>
+            <a class="little-circle three" href="#link6" data-name="Twitter"></a>
+            <a class="little-circle four" href="#link5" data-name="Youtube"></a>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jq.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/social.js"></script>
+
+</body>
+</html>
